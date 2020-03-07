@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:id="@+id/framelayoutAspirasi"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.AspirasiFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:id="@+id/ly_parent"
+        android:padding="10dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Daftar Aspirasi"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/spOpt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textTitle"
+            android:layout_marginBottom="10dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/asptype">
+        </Spinner>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/aspirasi_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spOpt"
+            android:layout_marginBottom="55dp"
+            android:orientation="vertical" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_add_black_24dp"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal" />
+
+        <RelativeLayout
+            android:id="@+id/textViewKosong"
+            android:visibility="invisible"
+            android:layout_below="@+id/spOpt"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="200dp">
+            <TextView
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Aspirasi Kosong"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

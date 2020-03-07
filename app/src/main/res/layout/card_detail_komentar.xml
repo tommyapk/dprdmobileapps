@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_komentar"
+    android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/civ_poto_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/bg_komentar"
+                    android:paddingHorizontal="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_namaUser"
+                        android:text="User Komisi A"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_tanggapan"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/tv_namaUser"
+                        android:text="Ini Tanggapan saya"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_height="wrap_content">
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_balasTanggapan"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Balas"-->
+<!--                        android:textStyle="bold" />-->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone"
+                        android:id="@+id/btn_hapus"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_logout"
+                        android:textSize="12dp"
+                        android:text="Hapus"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        android:paddingRight="23dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="&#8942;"
+        android:textAppearance="?android:textAppearanceLarge" />
+</RelativeLayout>

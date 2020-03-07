@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:paddingTop="70dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/back_heeader"
+        android:duplicateParentState="true"
+        android:text="DPRD\nKota Makassar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panduan"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_number"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_number"
+                    android:text="2"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_number"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_number"
+                    android:text="4"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Masukkan Aspirasi"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sampaikan keluhan anda dan laporkan keadaan kota makassar"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Proses Validasi"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Aspirasi anda akan di validasi dan diteruskan langsung ke komisi terkait."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Menunggu Tanggapan"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Menunggu Proses Tindaklanjut aspirasi anda."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginTop="10dp"
+                    android:text="Komentari Tanggapan"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Anda bisa mengomentari tanggapan dari anggota dprd yang bersangkutan."
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aspirasi Publik"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="6dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:padding="20dp"
+               android:textAlignment="center"
+               android:text="Aspirasi Publik merupakan perubahan yang lebih baik dengan tujuan untuk meraih keberhasilan di masa depan"/>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masyarakat"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="Adalah sekelompok orang yang membentuk sebuah sistem semi tertutup (semi terbuka),
+dimana sebagian besar interaksi adalah antara individu-individu yang berada dalam Kelompok Tersebut"/>
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/signup_logo"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_below="@+id/img_user"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="7dp"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="38dp"
+                android:hint="Nama"
+                android:outlineAmbientShadowColor="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_below="@+id/txtName"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="7dp"
+                android:drawableLeft="@drawable/ic_email_black"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="5dp"
+                android:hint="Email"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtNohp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/txtEmail"
+                android:drawableLeft="@drawable/ic_phone_black"
+                android:drawablePadding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="7dp"
+                android:hint="Nomor Telpon "
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/txtTgllahir"
+                android:layout_below="@+id/txtNohp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_tgllahir_black"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="5dp"
+                android:hint="Tanggal Lahir"
+                android:layout_height="38dp"
+                android:paddingTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_below="@+id/txtTgllahir"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="7dp"
+                android:hint="Password"
+                android:ems="10"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/txtAlamat"
+                android:layout_below="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="38dp"
+                android:drawableLeft="@drawable/ic_alamat_black"
+                android:drawablePadding="10dp"
+                android:paddingTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Alamat"
+                android:layout_marginTop="5dp"
+                android:inputType="text" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_below="@+id/txtAlamat"
+                android:textColor="#fff"
+                android:background="@drawable/btn_primary"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:text="Register" />
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_below="@id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Sudah punya akun?\nLogin disini"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_below="@id/txtAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

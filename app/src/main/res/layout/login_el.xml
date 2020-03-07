@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="30dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/login_logo" />
+
+    <EditText
+        android:layout_below="@+id/img_user"
+        android:id="@+id/textInputEmail"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_person_black"
+        android:paddingLeft="5px"
+        android:layout_centerHorizontal="true"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/textInputPassword"
+        android:layout_below="@id/textInputEmail"
+        android:drawableLeft="@drawable/ic_pass"
+        android:paddingLeft="5px"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_below="@id/textInputPassword"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_primary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:text="Belum Punya akun?\nDaftar Sekarang"
+        android:textColor="@android:color/background_dark"
+        android:textFontWeight="200"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnlogin"/>
+
+
+</RelativeLayout>
